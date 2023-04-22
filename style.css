@@ -1,0 +1,106 @@
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
+/*
+  Tried to read the CSS for context clues and work with it 
+  and utilize it to my advantage.
+*/
+
+body {
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  background-color: #eae2b7;
+}
+
+/* Set the font family for any h1, h2, or h3 heading */
+h1,
+h2,
+h3 
+{
+  font-family: "Playfair Display", Times, serif;
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+/* Because of this project, I am under standing the reasons for div's */
+
+article {
+  padding: 50px 0;
+}
+
+article div {
+  text-align: center;
+  width: 100%;
+}
+
+p 
+{
+  line-height: 1.5;
+  width: 600px;
+  margin: auto;
+  
+}
+
+/* The div container constrains the content width within the main container to 600px */
+/* I really appreaciate this comment, made me understand why div's exist */
+div {
+  margin: auto;
+  width: 600px;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+/* Add your solution below */
+
+.image-circle 
+{
+  border: 2px solid #003049;
+  border-radius: 50%;
+}
+
+nav
+{
+  text-align: center;
+  
+}
+
+ul
+{
+  margin: auto;
+  width: 600px
+}
+
+a
+{
+  text-underline-position: auto;
+  color: #d62828;
+  padding-right: 15px;
+}
+a:link
+{
+  color: #d62828;
+}
+
+a:hover
+{
+  color: #f77f00;
+}
+
+/* Created this class to do something, looked online
+   for other solutions. Realized that I had to full 
+   size the site on repl.
+*/
+.ordered-list
+{
+  margin:auto;
+  width: 600px;
+}
