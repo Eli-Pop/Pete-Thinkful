@@ -15,7 +15,7 @@
   <header>
       <h1>Pete Thinkful | Artist</h1>
       <nav>
-        <div>
+        <div> <!-- This will take the user to appropriate section of the site -->
           <a href="#About">About</a> 
           <a href="#Portfolio">Portfolio</a> 
           <a href="#Contact">Contact</a> 
@@ -30,15 +30,18 @@
            I am sure I can use font sizes instead. Though
            I noticed there was CSS for h1 to h3.
       -->
-      <section id="About">
-        <article>
+      <!--
+          Removed the Section tags as it would raise and HTML 
+          warning. ID'ing the articles sufficed in taking the reader
+          to taking the reader to the appropriate "section"
+      -->
+        <article id="About"> <!-- This ties to the about anchor -->
           <!--
             I used the pre-existing div properties to my benefit to align the 
             headings above the pics.
           -->
-          
-          <div>
             <h2>About<br></h2>
+          <div>
             <h3>Hi! I'm Pete Thinkful<br><br></h3>
             <img class="image-circle" src="images/pete-thinkful.png" alt="Pete Thinkful">
           </div>
@@ -47,7 +50,7 @@
             I'm an artist living in Denver, Colorado.<br><br>
             As an artist, I'm interesting in:<br><br>
           </p>
-            <ul>
+            <ul> <!-- Unordered list -->
               <li>Producing abstract art</li>
               <li>Creating street graffiti art</li>
               <li>Connecting with like-minded artists<br><br></li>
@@ -64,14 +67,13 @@
             <br>
             After graduating college, I became an art teacher and worked with beginners and
             professionals. I love art and my works have been featured in major art galleries
-            accross the globe.<br><br>
+            accross the globe.<br><br> <!-- <br> were added for the appropriate spacing -->
             If you're looking to hire an artist or if you're an artist looking for a 
             collaboration for your next project, please reach out! I'm so excited to work
             with other artists to create new art.
           </p>
-          
         </article>
-      </section>
+      
 
       <hr>
 
@@ -80,18 +82,23 @@
       <!--
         The alt texts were already present for the description of the images
       -->
+      <!-- 
+        Instead of a section, I ID'ed the articles. HTML validator would throw
+        flags for either Article or Sections if a heading didn't follow. DIV's 
+        could be used, but too many unecessary tags would be used when just Article
+        can suffice.
+      -->
     
-    <section id="Portfolio">
-      <article>
+      <article id="Portfolio">
         <h2>Portfolio<br><br></h2>
         <h3>Abstract Red<br><br></h3>
         <div>
           <img src="images/abstract-red.png" alt="Abstract Red">
         </div>
           <p>
-            <br>
+            <br> <!-- Added for spacing -->
             Vaporware wayfarers heirloom neutra disrupt. Activated charcoal wasitcoat 
-            scenester hell of. <br><br>
+            scenester hell of. <br><br> <!-- Added for spacing -->
           </p>
 
         <h3>Spiral Zany<br><br></h3>
@@ -99,9 +106,9 @@
           <img src="images/spiral-zany.png" alt="Spiral Zany">
         </div>
           <p>
-            <br>
+            <br> <!-- Added for spacing -->
             Sriracha portland taxidermy cronut messenger bag, vegan distillery. Vaporware 
-            kickstarter air plant mumblecore food truck.<br><br>
+            kickstarter air plant mumblecore food truck.<br><br> <!-- Added for spacing -->
           </p>
 
         <h3>Melted Rainbow<br><br></h3>
@@ -114,7 +121,7 @@
             forage.
           </p>
       </article>
-    </section>
+    
 
       <hr>
 
@@ -122,15 +129,26 @@
   </main>
 
   <!-- Footer section -->
+  <!-- It seems that sections won't raise a warning if a heading follows 
+       soon after
+  -->
+  <!-- In the above, I have removed section as it was not necessary to nest
+       articles and sections as it would flag an HTML warning. ID'ing the
+       articles sufficed in moving the readers page to the appropriate "section".
+  -->
   <section id="Contact">
     <h2>Contact</h2>
     <p>I'd love to hear from you! Please feel free to contact or follow me:<br></p>
 
     <!--Had to create a classed div to get the li to work the way I want to. -->
     <!-- Tried to link to actual home page of these sites. Not working -->
-    
+    <!--
+      This div was created with it's own class as the links had to had it's own "rules"
+      to be centered on the page.
+    -->
     <div class = "ordered-list">
-      <ol >
+      <ol > <!-- Ordered list. -->
+        <!-- For the assesment, these are not tied to any site. -->
         <li><a href="" target=_blank>LinkedIn</a></li>
         <li><a href="" target=_blank>Instagram</a></li>
         <li><a href="" target=_blank>Pinterest</a></li>
